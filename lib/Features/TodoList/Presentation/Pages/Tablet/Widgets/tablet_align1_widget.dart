@@ -12,7 +12,7 @@ class TabletAlign1Widget extends StatelessWidget {
     return Align(
         alignment: Alignment.topLeft,
         child: Padding(
-          padding: EdgeInsets.all(Get.height * 0.08),
+          padding: EdgeInsets.all(MediaQuery.sizeOf(context).height * 0.08),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -20,8 +20,8 @@ class TabletAlign1Widget extends StatelessWidget {
                 clipBehavior: Clip.none,
                 children: [
                   Container(
-                    width: Get.height * 0.15,
-                    height: Get.height * 0.15,
+                    width: MediaQuery.sizeOf(context).height * 0.15,
+                    height: MediaQuery.sizeOf(context).height * 0.15,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(100),
                         color: pColor == Colors.white
@@ -37,13 +37,9 @@ class TabletAlign1Widget extends StatelessWidget {
                       size: Checkbox.width * 3,
                     ),
                   ),
-
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
                   Positioned(
-                    left: Get.width * -0.02,
-                    bottom: Get.height * 0.09,
+                    left: MediaQuery.sizeOf(context).width * -0.02,
+                    bottom: MediaQuery.sizeOf(context).height * 0.09,
                     child: IconButton(
                       onPressed: () {
                         showDialog(
@@ -55,14 +51,14 @@ class TabletAlign1Widget extends StatelessWidget {
                       },
                       icon: Icon(
                         Icons.add_circle,
-                        size: Get.height * 0.04,
+                        size: MediaQuery.sizeOf(context).height * 0.04,
                       ),
                     ),
                   ),
                 ],
               ),
               SizedBox(
-                height: Get.height * 0.04,
+                height: MediaQuery.sizeOf(context).height * 0.04,
               ),
               Obx(() => Text(
                     "Number of Tasks: ${controller.tasks.length.toString()}",

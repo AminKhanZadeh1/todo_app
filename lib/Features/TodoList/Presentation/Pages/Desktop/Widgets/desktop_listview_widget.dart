@@ -12,7 +12,7 @@ class DesktopListViewWidget extends StatelessWidget {
     var pColor = Theme.of(context).primaryColor;
     return Container(
         width: double.infinity,
-        height: Get.height * 0.6,
+        height: MediaQuery.sizeOf(context).height * 0.6,
         decoration: BoxDecoration(
             color: pColor,
             borderRadius: const BorderRadius.only(

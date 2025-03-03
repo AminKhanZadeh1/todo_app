@@ -12,7 +12,7 @@ class TabletListViewWidget extends StatelessWidget {
     var pColor = Theme.of(context).primaryColor;
     return Container(
         width: double.infinity,
-        height: Get.height * 0.5,
+        height: MediaQuery.sizeOf(context).height * 0.5,
         decoration: BoxDecoration(
             color: pColor,
             borderRadius: const BorderRadius.only(

@@ -12,7 +12,7 @@ class MobileAlign1Widget extends StatelessWidget {
     return Align(
         alignment: Alignment.topLeft,
         child: Padding(
-          padding: EdgeInsets.all(Get.height * 0.05),
+          padding: EdgeInsets.all(MediaQuery.sizeOf(context).height * 0.05),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -37,10 +37,6 @@ class MobileAlign1Widget extends StatelessWidget {
                       size: 40,
                     ),
                   ),
-
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
                   Positioned(
                     left: -18,
                     bottom: 50,
@@ -59,7 +55,7 @@ class MobileAlign1Widget extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: Get.height * 0.03,
+                height: MediaQuery.sizeOf(context).height * 0.03,
               ),
               Obx(() => Text(
                     "Number of Tasks: ${controller.tasks.length.toString()}",

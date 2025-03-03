@@ -14,7 +14,7 @@ class DrawerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    getController.isSwitched.value = box.read('theme') ?? false;
+    final height = MediaQuery.sizeOf(context).height;
     return Drawer(
       child: ListView(
         children: [
@@ -75,7 +75,7 @@ class DrawerWidget extends StatelessWidget {
             },
           ),
           SizedBox(
-            height: Get.height > 600 ? Get.height * 0.4 : Get.height * 0.1,
+            height: height > 600 ? height * 0.4 : height * 0.1,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
