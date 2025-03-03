@@ -16,6 +16,9 @@ Don't worry about forgetting your tasks, my friend! With Todo List, you can jot 
 - GetStorage (Local Storage)
 - Clean Architecture (For scalable and maintainable code)
 
+- ## 📱 Screenshots
+<img src="screenshots/list.jpg" width="300"/> <img src="screenshots/addtask.jpg" width="300"/>
+
 ## 🔗 Download APK
 [Download Latest Release](https://github.com/AminKhanZadeh1/todo_app/releases)  
 
